@@ -4,8 +4,9 @@
     import Projects from './components/projects';
     import Blog from './Blog'
     import BlogPost from './components/BlogPost';
-    import { Box, Typography } from '@mui/material';
-    import background from './assets/placeholder.png'
+    import { Box, Card, Typography } from '@mui/material';
+    import background from './assets/stars.jpg'
+     
     
     const Home = () => (
       <Box
@@ -22,12 +23,10 @@
           textAlign: 'center',
         }}
       >
-        <Typography variant="h2" component="h1" sx={{ mb: 2, textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}>
-          James Catbagan
-        </Typography>
-        <Typography variant="h5" sx={{ textShadow: '1px 1px 4px rgba(0,0,0,0.7)' }}>
-          Full-Stack Developer
-        </Typography>
+        <Card>
+          lmao
+        </Card>
+        
       </Box>
     );
 

@@ -6,6 +6,8 @@ export default function BlogPost() {
   // Get the postId from the URL
   const { postId } = useParams<{ postId: string }>();
   const post = posts.find(p => p.id.toString() === postId);
+  
+ 
 
   if (!post) {
     return (
@@ -17,6 +19,8 @@ export default function BlogPost() {
       </Box>
     );
   }
+
+
 
   return (
     <Box sx={{ p: { xs: 2, md: 4 } }}>
