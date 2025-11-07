@@ -5,7 +5,16 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Link as RouterLink } from 'react-router-dom';
-import posts from './components/Blog/blogposts.json'
+import postsData from './components/Blog/blogposts.json';
+
+interface Post {
+  id: number | string;
+  title: string;
+  date: string;
+  summary: string;
+}
+
+const posts: Post[] = postsData;
 
 export default function Blog() {
   return (
@@ -15,8 +24,8 @@ export default function Blog() {
       </Typography>
       <Grid container spacing={4} justifyContent="center">
         
-        {posts.map((post: any) => (
-          <Grid size = {11} item xs={0} md={0} key={post.id}>
+        {[...posts].reverse().map((post) => (
+          <Grid size = {13} item xs={12} sm={10} md={8} key={post.id}>
             <Card>
               <CardActionArea component={RouterLink} to={`/blog/${post.id}`}>
                 <CardContent>

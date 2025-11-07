@@ -5,6 +5,7 @@
     import Blog from './Blog'
     import BlogPost from './components/BlogPost';
     import { Box, Card, Typography, Container } from '@mui/material';
+    import Button from '@mui/material/Button'
      
     
     const Home = () => (
@@ -24,7 +25,7 @@
         <Card sx={{backgroundColor: 'rgba(0,0,0,0.5)', p: { xs: 2, md: 4 } }}>
           <Typography variant='h2' sx={{ mb: 2 }}>Hello,</Typography>
           <Typography variant='h2' >I'm James Catbagan</Typography>
-          <Typography variant='body1' > </Typography>
+          <Button href='/downloads/JamesCatbaganResume2025.pdf' download="JamesCatbaganResume2025.pdf">Resume Download</Button>
         </Card>
         
         

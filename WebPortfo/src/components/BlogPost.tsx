@@ -36,7 +36,7 @@ export default function BlogPost() {
   if (!postInfo) {
     return (
       <Box sx={{ p: 3, textAlign: 'center' }}>
-        <Typography variant="h5">Post not found</Typography>
+        <Typography variant="h5">Post not found, if you're trying to find something using a direct link i probably deleted it by now</Typography>
         <Button component={RouterLink} to="/blog" variant="contained" sx={{ mt: 2 }}>
           GO BACK
         </Button>
