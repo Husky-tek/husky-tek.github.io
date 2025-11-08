@@ -30,6 +30,15 @@ export default function Projects() {
                 <Typography variant="body2" color="text.secondary">
                   {project.description}
                 </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="text.secondary"
+                  component="a"
+                  href={project.imageLink}
+                  target="_blank"
+                >
+                  {project.imageAuthor}
+                </Typography>
               </CardContent>
               </CardActionArea>
             </Card>

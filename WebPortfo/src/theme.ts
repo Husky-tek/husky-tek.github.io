@@ -5,6 +5,9 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
   },
+  typography:{
+
+  },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
