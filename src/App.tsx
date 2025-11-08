@@ -2,9 +2,15 @@
     import { Routes, Route } from 'react-router-dom';
     import Navbar from './components/NavBar';
     import Projects from './components/projects';
+<<<<<<< HEAD:src/App.tsx
     import Blog from './components/Blog/Blog';
     import BlogPost from './components/Blog/BlogPost';
     import { Box, Card, Typography, Container, Link } from '@mui/material';
+=======
+    import Blog from './Blog'
+    import BlogPost from './components/BlogPost';
+    import { Box, Card, Typography, Container } from '@mui/material';
+>>>>>>> parent of 062783d (Move project files to root and update blog content):WebPortfo/src/App.tsx
     import Button from '@mui/material/Button'
     import Resume from './assets/JamesCatbaganResume2025.pdf'
      
@@ -29,16 +35,6 @@
           <a href={Resume} target='_blank' style={{ textDecoration: 'none' }}>
             <Button variant="contained" sx={{ mt: 2 }}>Resume Download</Button>
           </a>
-          <Typography variant="caption" display="block" sx={{ mt: 2 }}>
-            Background photo by{' '}
-            <Link 
-              href="https://unsplash.com/photos/blue-sky-with-stars-during-night-time-GX542ehZwSk" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              color="inherit">
-              Arthur Volkers
-            </Link>
-          </Typography>
         </Card>
         
         
