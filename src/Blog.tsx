@@ -23,13 +23,7 @@ export default function Blog() {
         Blogposts
       </Typography>
       <Grid container spacing={4} justifyContent="center">
-        
-<<<<<<< HEAD
-        {[...posts].reverse().map((post: Post) => (
-=======
         {[...posts].reverse().map((post) => (
-          <Grid size = {13} item xs={12} sm={10} md={8} key={post.id}>
->>>>>>> parent of 95e5fed (Remove unnecessary size attribute from Grid component in Blog)
           <Grid item xs={12} sm={10} md={8} key={post.id}>
             <Card>
               <CardActionArea component={RouterLink} to={`/blog/${post.id}`}>
