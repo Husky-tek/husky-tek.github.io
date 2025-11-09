@@ -30,6 +30,7 @@ export default function Projects() {
                 <Typography variant="body2" color="text.secondary">
                   {project.description}
                 </Typography>
+                <a href={project.imageLink} style={{ marginTop: '8px', color: 'lightgray' } } target='_blank'>Photo by {project.imageAuthor}</a>
               </CardContent>
               </CardActionArea>
             </Card>

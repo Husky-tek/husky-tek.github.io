@@ -6,6 +6,7 @@
     import BlogPost from './components/BlogPost';
     import { Box, Card, Typography, Container } from '@mui/material';
     import Button from '@mui/material/Button'
+    import Resume from '/Downloads/JamesCatbaganResume2025.pdf'
      
     
     const Home = () => (
@@ -23,9 +24,14 @@
       >
 
         <Card sx={{backgroundColor: 'rgba(0,0,0,0.5)', p: { xs: 2, md: 4 } }}>
-          <Typography variant='h2' sx={{ mb: 2 }}>Hello,</Typography>
-          <Typography variant='h2' >I'm James Catbagan</Typography>
-          <Button href='/downloads/JamesCatbaganResume2025.pdf' download="JamesCatbaganResume2025.pdf">Resume Download</Button>
+          <Typography variant='h2' sx={{ mb: 2 }}>Hello,I'm James Catbagan</Typography>
+          <Typography variant='body1' >I'm a CS student @ UTEP focusing on web development who is also a game dev hobbyist.</Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 2 }}>
+            <a href={Resume} target='_blank' style={{ textDecoration: 'none' }}>
+              <Button variant="contained">Resume Download</Button>
+            </a>
+            <a href='https://unsplash.com/photos/blue-sky-with-stars-during-night-time-GX542ehZwSk' style={{ marginTop: '8px', color: 'lightgray' }} target='_blank'>Background photo by Arthor Volkers</a>
+          </Box>
         </Card>
         
         
