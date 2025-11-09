@@ -2,7 +2,7 @@
   "name": "portfo-website",
   "private": true,
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://husky-tek.github.io/PortfoWebsite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
