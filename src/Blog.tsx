@@ -25,7 +25,7 @@ export default function Blog() {
       <Grid container spacing={4} justifyContent="center">
         
         {[...posts].reverse().map((post) => (
-          <Grid size = {13} item xs={12} sm={10} md={8} key={post.id}>
+          <Grid key={post.id}>
             <Card>
               <CardActionArea component={RouterLink} to={`/blog/${post.id}`}>
                 <CardContent>

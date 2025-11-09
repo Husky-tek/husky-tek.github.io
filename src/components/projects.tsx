@@ -12,7 +12,7 @@ export default function Projects() {
     <Box sx={{ flexGrow: 1, padding: 2  }}>
       <Grid container spacing={2}>
         {projects.map((project: any) => (
-          <Grid item size={{xs:12,sm:6,md:4}} key={project.id}>
+          <Grid  key={project.id}>
             <Card sx={{ maxWidth: 500, height: '100%' }}>
               <CardActionArea href={project.github} target='_blank'>
               {project.image && (
