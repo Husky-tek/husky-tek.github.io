@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
+import {Grid} from '@mui/material/';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -12,7 +12,7 @@ export default function Projects() {
     <Box sx={{ flexGrow: 1, padding: 2  }}>
       <Grid container spacing={1}>
         {projects.map((project: any) => (
-          <Grid item xs={12} sm={6} md={4} key={project.id}>
+          <Grid item={true} xs={12} sm={6} md={4} key={project.id}>
             <Card sx={{ maxWidth: 500, height: '100%' }}>
               <CardActionArea href={project.github} target='_blank'>
               {project.image && (
