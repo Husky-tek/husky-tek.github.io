@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link as RouterLink } from 'react-router-dom';
-import { Box, Typography, Paper, Button, CircularProgress, CardMedia } from '@mui/material';
+import { Box, Typography, Paper, Button, CircularProgress } from '@mui/material';
 import posts from './Blog/blogposts.json';
 
 export default function BlogPost() {
@@ -14,20 +14,21 @@ export default function BlogPost() {
 
   useEffect(() => {
     if (postInfo) {
-      fetch(postInfo.content)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
+      // Vite needs a relative path from the current file to the asset in the public directory
+      // for the dynamic import to work correctly.
+      const assetPath = `../${postInfo.content}`;
+
+      import(/* @vite-ignore */ assetPath)
+        .then(module => fetch(module.default)) // The module's default export is the resolved URL
+        .then(res => {
+          if (!res.ok) throw new Error('Network response was not ok');
+          return res.text();
         })
-        .then(text => {
-          setPostContent(text);
-          setLoading(false);
-        })
+        .then(text => setPostContent(text))
         .catch(err => {
           console.error("Failed to fetch post content:", err);
           setError('Failed to load post content.');
+        }).finally(() => {
           setLoading(false);
         });
     }
@@ -55,14 +56,6 @@ export default function BlogPost() {
   return (
     <Box sx={{ p: { xs: 2, md: 4 } }}>
       <Paper sx={{ p: { xs: 2, md: 4 }, backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
-        {postInfo.image && (
-          <CardMedia
-            component="img"
-            image={postInfo.image}
-            alt={postInfo.title}
-            sx={{ mb: 2 }}
-          />
-        )}
         <Typography variant="h4" component="h1" gutterBottom>
           {postInfo.title}
         </Typography>

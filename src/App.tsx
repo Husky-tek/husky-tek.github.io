@@ -2,15 +2,9 @@
     import { Routes, Route } from 'react-router-dom';
     import Navbar from './components/NavBar';
     import Projects from './components/projects';
-<<<<<<< HEAD:src/App.tsx
-    import Blog from './components/Blog/Blog';
-    import BlogPost from './components/Blog/BlogPost';
-    import { Box, Card, Typography, Container, Link } from '@mui/material';
-=======
-    import Blog from './Blog'
+    import Blog from './Blog';
     import BlogPost from './components/BlogPost';
-    import { Box, Card, Typography, Container } from '@mui/material';
->>>>>>> parent of 062783d (Move project files to root and update blog content):WebPortfo/src/App.tsx
+    import { Box, Card, Typography, Container, Link } from '@mui/material';
     import Button from '@mui/material/Button'
     import Resume from './assets/JamesCatbaganResume2025.pdf'
      
@@ -53,7 +47,7 @@
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/blog" element={<Blog />} />
-                <Route path="/blog/:id" element={<BlogPost />} />
+                <Route path="/blog/:postId" element={<BlogPost />} />
               </Routes>
             
             
