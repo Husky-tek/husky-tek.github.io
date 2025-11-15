@@ -4,15 +4,6 @@
     "title": "Development of Cheese Crusade #1",
     "date": "2025-11-6",
     "summary": "The start of development and what inspired me to make this game",
-    "content": "/posts/post1.txt"
-  },
-
-  {
-    "id": 2,
-    "title": "Development of Cheese Crusade #2",
-    "date": "2025-11-13",
-    "summary": "Continuing development and adding new features",
-    "content": "/posts/post2.txt"
+    "content": "I have been developing a game throughout the summer called “Cheese Crusade.” It's a single player platform fighter with some roguelike elements.  What gave me this idea was the adventure mode in Super Smash Bros. Brawl known as Subspace Emissary. I brought this up to my friends and they also thought it was a good idea. One of them, Javier, said that he is willing to help me with the artwork. That's when I decided to just download Godot and try to learn how to use it.  As of right now, development has paused for now as me and Javier are currently busy with college. We should be able to resume when the semester ends and hope to get some progress done. As for where we are in the project, we are barely implementing map generation and I think I should redo it mainly because of how broken it is. I’m hoping that I will be able to fix it over the winter and have more things done by then.   Please follow my friend Javier on twitter @javi_cd_j for providing the artwork for the project."
   }
- 
 ]
