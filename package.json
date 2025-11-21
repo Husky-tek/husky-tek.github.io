@@ -2,7 +2,7 @@
   "name": "portfowebsite",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://jcatbag.net/PortfoWebsite",
+  "homepage": "https://jcatbag.net",
   "type": "module",
   "scripts": {
     "dev": "vite",
